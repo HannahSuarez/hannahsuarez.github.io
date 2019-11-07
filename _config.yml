@@ -1,0 +1,56 @@
+
+# SEO settings
+title: "Articles, Notes and Other Work"
+title2: " by hcs0" # default: ""
+description: "hcs0 writings"
+keywords: "hcs0, hannah suarez"
+url: http://hannahsuarez.github.io # site url
+baseurl: null # apply repo name if use it under gh-pages branch
+# baseurl: null # apply null if repo name is something like username.github.io
+
+google_analytics: UA-59050709-2
+repo: https://github.com/HannahSuarez/hannahsuarez.github.io
+twitter_username: "superruserr"
+comments: true
+
+# Build settings
+permalink   : /:year/:title/
+markdown    : kramdown
+highlighter : rouge
+
+source: ./
+destination: ./_site
+
+# Sass configuration
+sass:
+  sass_dir: assets/scss
+  style: compressed # expanded
+
+# Author settings
+author:
+  name     : "Hannah Suarez"
+  job      : "💻 Technology Evangelist"
+  bio      : "Work in security, log collection, SIEMs, networking and sysadmin."
+  thumb    : /images/hannahsuarez.jpg
+  url      : http://hannahsuarez.github.io
+  github   : http://github.com/hcs0
+  gitlab   : http://gitlab.com/hcs0
+  linkedin : http://linkedin.com/in/hannahsuarez
+
+# social settings
+og_locale: "en_US"
+twitter_card: "summary_large_image"
+twitter_site: "@superruserr"
+
+gems:
+  - bourbon
+  - jekyll-paginate
+
+# navbar pages
+navbar:
+  - slug : about
+    title: About
+  - slug : blog
+    title: Blog
+
+exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
