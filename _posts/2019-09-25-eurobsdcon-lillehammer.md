@@ -24,6 +24,6 @@ He mentions kernel audit logging and file integrity monitoring with bsdmaudit, a
 
 Various other photos are at:
 
-[http://hannahsuarez.me/blog/2019/09/22/maihaugen-open-air-museum-lillehammer/](http://hannahsuarez.me/blog/2019/09/22/maihaugen-open-air-museum-lillehammer
+[Blog - Maihaugen](http://hannahsuarez.me/blog/2019/09/22/maihaugen-open-air-museum-lillehammer)
 
-[https://hannahsuarez.me/blog/2019/09/29/quick-trek-in-lillehammer-including-winter-olympics-ski-jump/](https://hannahsuarez.me/blog/2019/09/29/quick-trek-in-lillehammer-including-winter-olympics-ski-jump/)
+[Blog - Trek and Ski jump](https://hannahsuarez.me/blog/2019/09/29/quick-trek-in-lillehammer-including-winter-olympics-ski-jump/)
