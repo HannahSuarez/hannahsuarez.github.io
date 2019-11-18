@@ -20,10 +20,10 @@ I was at EuroBSDCon (my first!) though it was largely at the social event. Hopef
 
 ![EuroBSDCon group at Maihaugen](/assets/images/audit.png)
 
-He mentions kernel audit logging and file integrity monitoring with bsdmaudit, auditd. See [https://medium.com/@hannahsuarez/response-on-data-manipulation-attacks-and-using-file-integrity-monitoring-to-help-mitigate-b92fb1d21a18](link) for FIM ideas
+He mentions kernel audit logging and file integrity monitoring with bsdmaudit, auditd. See [https://medium.com/@hannahsuarez/response-on-data-manipulation-attacks-and-using-file-integrity-monitoring-to-help-mitigate-b92fb1d21a18](https://medium.com/@hannahsuarez/response-on-data-manipulation-attacks-and-using-file-integrity-monitoring-to-help-mitigate-b92fb1d21a18) for FIM ideas
 
 Various other photos are at:
 
-[http://hannahsuarez.me/blog/2019/09/22/maihaugen-open-air-museum-lillehammer/](link)
+[http://hannahsuarez.me/blog/2019/09/22/maihaugen-open-air-museum-lillehammer/](http://hannahsuarez.me/blog/2019/09/22/maihaugen-open-air-museum-lillehammer
 
-[https://hannahsuarez.me/blog/2019/09/29/quick-trek-in-lillehammer-including-winter-olympics-ski-jump/](link)
+[https://hannahsuarez.me/blog/2019/09/29/quick-trek-in-lillehammer-including-winter-olympics-ski-jump/](https://hannahsuarez.me/blog/2019/09/29/quick-trek-in-lillehammer-including-winter-olympics-ski-jump/)

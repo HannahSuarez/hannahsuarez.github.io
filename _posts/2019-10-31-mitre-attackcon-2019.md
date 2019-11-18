@@ -109,7 +109,7 @@ From [this user](https://twitter.com/bodaceacat): Late addition to today's #atta
 When you move to a cloud workload, you become a consumer and less an admin. Threat hunting becomes an interesting challenge. Consuming logs in a cloud environment is important. >> Agreed! Similar sentiment that I heard from MITRE ATT&CK EU community group.
 
 ATT&CK for Cloud version 1 released (last week) #ATTACKcon
-See list at https://attack.mitre.org/resources/updates/updates-october-2019/index.html
+See list at [https://attack.mitre.org/resources/updates/updates-october-2019/index.html](https://attack.mitre.org/resources/updates/updates-october-2019/index.html)
 
 DNC hack was a notable incident for use case of adversary in this page. They need to build this out and looking for contributions (majority of how framework is built from community)
 
