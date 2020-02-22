@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Going to BSIDES DUBLIN"
-description: "
+description: "Going to BSIDES DUBLIN"
 comments: true
 keywords: "bsides, security, security conference"
 ---
