@@ -131,3 +131,7 @@ The `auid` records the Audit user ID and for any other logs you can also trace b
 The `uid` and `gid` is 0 which indicates superuser account.
 
 The `comm` indicates what command was used. In this case we know that `nano` was invoked to change the DNS configuration file and the path to the executable is `/bin/nano`
+
+---
+
+Read more about [DNS Monitoring](https://nxlog.co/documentation/nxlog-user-guide/dns-monitoring.html) and the [Linux Audit System](https://nxlog.co/documentation/nxlog-user-guide/linux-audit.html).
