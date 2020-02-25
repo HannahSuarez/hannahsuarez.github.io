@@ -3,7 +3,7 @@ layout: post
 title: "Who moved my DNS cheese? BIND 9 DNS Log Collection and DNS Auditing"
 description: "Who moved my DNS cheese? The Linux edition"
 comments: true
-keywords: "dns,dhcp,bind9,bind,linux,rhel"
+keywords: "dns,dhcp,bind9,bind,linux,rhel,nxlog"
 ---
 
 If you setting up native DNS audit logging on MSAD DNS servers you may already be familiar with this 2013 blog post [Who moved the DNS Cheese? Auditing for AD Integrated DNS Zone and Record Deletions](https://blogs.technet.microsoft.com/askpfeplat/2013/10/12/who-moved-the-dns-cheese-auditing-for-ad-integrated-dns-zone-and-record-deletions/).
@@ -16,7 +16,7 @@ During that time last week, I had looked into a few open source DNS servers/othe
 
 * When setting up log collection, make sure that the process has access to read the Syslog stream.
 
-* When setting up file-based log collection, ensure that the process has write access to the file itself. By the way, please don't disable AppArmour like what certain SO answers are telling you to do so. You can look into the AppArmor rules for BIND and also add a write permission for it.
+* When setting up file-based log collection, ensure that the process has write access to the file itself. Check the AppArmor rules for BIND.
 
 * In fact you should read this post by ISC2 [BIND Logging - some basic recommendations](https://kb.isc.org/docs/aa-01526) because you can't go wrong with that.
 
