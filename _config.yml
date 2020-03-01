@@ -8,6 +8,7 @@ url: http://hannahsuarez.github.io # site url
 baseurl: null # apply repo name if use it under gh-pages branch
 # baseurl: null # apply null if repo name is something like username.github.io
 
+google_analytics: UA-59050709-2
 repo: https://github.com/HannahSuarez/hannahsuarez.github.io
 twitter_username: "superruserr"
 comments: true
