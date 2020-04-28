@@ -18,10 +18,10 @@ Much of it was theory, but it was quiet important to understand how things work.
 
 ## Recommended tools from the workshop
 
-* DEX - [https://github.com/dexidp/dex/blob/master/Documentation/kubernetes.md](https://github.com/dexidp/dex/blob/master/Documentation/kubernetes.md)
-* Harbor - [https://goharbor.io/](https://goharbor.io/)
-* Falco - [github.com/falcosecurity](github.com/falcosecurity)
-* Kube-hunter - [https://github.com/aquasecurity/kube-hunter](https://github.com/aquasecurity/kube-hunter)
-* Kube-bench - [https://github.com/aquasecurity/kube-bench](https://github.com/aquasecurity/kube-bench)
-* Sonobuoy - [https://github.com/vmware-tanzu/sonobuoy](https://github.com/vmware-tanzu/sonobuoy)
-* [securityhub.dev](securityhub.dev)
+* [DEX](https://github.com/dexidp/dex/blob/master/Documentation/kubernetes.md)
+* [Harbor](https://goharbor.io/)
+* [Falco](github.com/falcosecurity)
+* [Kube-hunter](https://github.com/aquasecurity/kube-hunter)
+* [Kube-bench](https://github.com/aquasecurity/kube-bench)
+* [Sonobuoy](https://github.com/vmware-tanzu/sonobuoy)
+* [securityhub](securityhub.dev)
