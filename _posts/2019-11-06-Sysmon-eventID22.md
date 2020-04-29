@@ -40,4 +40,4 @@ One of the trickiest think about utilizing Sysmon for DNS monitoring is going to
 * Google Chrome has a built-in DNS pre-fetching mechanism (used to improve on page loading), also Firefox
 * From Windows Server 2016, there is an addition of a new feature called [DNS Policy](https://docs.microsoft.com/en-us/windows-server/networking/dns/deploy/dns-policy-scenario-guide) and to reduce noise, administrators may want to add some [filtering](https://docs.microsoft.com/en-us/windows-server/networking/dns/deploy/apply-filters-on-dns-queries) related policies for it.
 
-There is an excellent resource by SwiftonSecurity for a Sysmon configuration file [here](https://github.com/SwiftOnSecurity/sysmon-config/) which also includes DNS as well as other Sysmon rules.
+There is an excellent resource by [SwiftonSecurity for a Sysmon configuration file](https://github.com/SwiftOnSecurity/sysmon-config/) which also includes DNS as well as other Sysmon rules.
