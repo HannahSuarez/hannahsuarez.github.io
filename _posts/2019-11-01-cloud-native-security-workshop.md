@@ -20,8 +20,8 @@ Much of it was theory, but it was quiet important to understand how things work.
 
 * [DEX](https://github.com/dexidp/dex/blob/master/Documentation/kubernetes.md)
 * [Harbor](https://goharbor.io/)
-* [Falco](github.com/falcosecurity)
+* [Falco](https://github.com/falcosecurity)
 * [Kube-hunter](https://github.com/aquasecurity/kube-hunter)
 * [Kube-bench](https://github.com/aquasecurity/kube-bench)
 * [Sonobuoy](https://github.com/vmware-tanzu/sonobuoy)
-* [securityhub](securityhub.dev)
+* [securityhub](https://securityhub.dev)
