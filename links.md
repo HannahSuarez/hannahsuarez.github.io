@@ -6,6 +6,10 @@ permalink: /links/
 
 **Contact / Social Media**
 
+All items posted on social media are my own opinions and do not represent my employers, clients, professional associations and more.
+
+Please note that I do not have Instagram or Facebook accounts.
+
 [Twitter - personal](https://www.twitter.com/superruserr)
 
 [LinkedIn](https://www.linkedin.com/in/hannahsuarez)
@@ -185,9 +189,9 @@ PQsvSSuHiviENJys
 -----END PGP PUBLIC KEY BLOCK-----
 ```
 
-Please note that I do not have Instagram or Facebook accounts.
-
 **Sites**
+
+All items posted on social media are my own opinions and do not represent my employers, clients, professional associations and more.
 
 [Personal Blog](https://blog.hannahsuarez.me/)
 
