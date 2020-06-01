@@ -12,9 +12,9 @@ The purpose of this blog is to advance our knowledge in this field by sharing in
 
 **Professional**
 
-I am currently Technical Evangelist for NXLog. NXLog is a multi-platform log management tool that helps to easily identify security risks, policy breaches or analyze operational problems in server logs, operation system logs and application logs.
+Currently I am involved with a DNS/domain security intelligence company. In addition, I work as consultant in IT Security with clients based in Germany.
 
-In addition to NXLog, I work as consultant in IT Security with clients based in Germany.
+Most recently, I was Technical Evangelist for NXLog. NXLog is a multi-platform log management tool that helps to easily identify security risks, policy breaches or analyze operational problems in server logs, operation system logs and application logs.
 
 Previously, I was a consultant for a secure managed file transfer software company, learning all about secure file transfer protocols (SFTP, FTP, FTPS) as well as applying secure file transfer solution to possible projects. I was also a support technician for a digital signage company, providing remote support for Linux and Windows Servers running the signage.
 
