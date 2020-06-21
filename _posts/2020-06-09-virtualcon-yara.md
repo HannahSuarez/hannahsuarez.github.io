@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Reversing 2020 - Virtual con on June 30th regarding Yara"
-description: ""Where Threat Hunters Go Deep on YARA!""
+description: "Where Threat Hunters Go Deep on YARA!"
 comments: true
 keywords: "yara, soc, siem, blue team, threat hunting"
 ---
