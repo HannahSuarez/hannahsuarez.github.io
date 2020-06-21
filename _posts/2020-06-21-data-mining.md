@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "From the 2015 archive: Introduction to the different types of mining"
-description: ""Introduction to the different types of mining""
+description: Introduction to the different types of mining
 comments: true
 keywords: "data, threat hunting"
 ---
