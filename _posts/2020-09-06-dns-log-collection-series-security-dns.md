@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How DNS request information is used in IT security"
+title: "How DNS request information is used in IT security - Attacks, Mitigations"
 description: "A series on DNS"
 comments: true
 keywords: "dns, domain name system"
@@ -72,7 +72,7 @@ Vulnerable [versions of MikroTik RouterBOARD](https://cve.mitre.org/cgi-bin/cven
 
 Vulnerable versions of [IBM DataPower Gateways](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-1773) (IBM X-Force ID: 136817) could allow MITM attacks via spoofing DNS responses to perform DNS cache poisoning and redirect Internet traffic. In this case, it is also useful to be kept up to date with vendor updates.
 
-# DNS Logging
+# DNS Logging - Going Beyond
 
 In addition to DNS log collection, be informed of other concepts including:
 
@@ -81,3 +81,43 @@ In addition to DNS log collection, be informed of other concepts including:
 * Integrity – sending and receiving various types of encrypted log data, with checksumming generation and validation, write events to append-only database tables
 * Dashboard Monitoring
 * Alerting
+
+## Other Monitoring Strategies
+
+Monitor DNS resolutions on every endpoint
+DNS query and response, process
+
+Monitor Netflow (IP) traffic to outbound DNS port 53
+Process, remote IP address and port, count of bytes
+
+Monitor DNS data on internal DNS servers
+DNS query and response, client and nameserver IP address
+
+Monitoring of the user (user and process) that is made pssible through setting up other log collection endpoints but not covered in the paper.
+
+## Mitigations
+
+### SANS CSC-5
+
+The followng are notes _captured_ directly from SANS CSC-5.
+
+#### CSC 5-11
+Enable domain name system (DNS) query logging to detect hostname lookup for known malicious C2 domains.
+
+#### CSC 11: Limitation and Control of Network Ports, Protocols, and Services
+Manage (track/control/correct) the ongoing operational use of ports, protocols, and services on networked devices in order to minimize windows of vulnerability available to attackers.
+
+Why Is This Control Critical?
+Attackers search for remotely accessible network services that are vulnerable to exploitation. Common examples include poorly configured web servers, mail servers, file and print services, and domain name system (DNS) servers installed by default on a variety of different device types, often without a business need for the given service.
+
+#### CSC 11-6
+Operate critical services on separate physical or logical host machines, such as DNS, file, mail, web, and database servers.
+
+#### CSC 13-3
+To lower the chance of spoofed e-mail messages, implement the Sender Policy Framework (SPF) by deploying SPF records in DNS and enabling receiver-side verification in mail servers.
+
+#### CSC 19: Secure Network Engineering
+7Make security an inherent attribute of the enterprise by specifying, designing, and building-in features that allow high confidence systems operations while denying or minimizing opportunities for attackers.
+
+#### CSC 19-3
+4Deploy domain name systems (DNS) in a hierarchical, structured fashion, with all internal network client machines configured to send requests to intranet DNS servers, not to DNS servers located on the Internet. These internal DNS servers should be configured to forward requests they cannot resolve to DNS servers located on a protected DMZ. These DMZ servers, in turn, should be the only DNS servers allowed to send requests to the Internet.
