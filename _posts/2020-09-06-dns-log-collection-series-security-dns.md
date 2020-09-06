@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How DNS request information is used in IT security - Attacks, Mitigations"
+title: "DNS and IT security - Know your DNS Queries and Requests, Attacks, and SANS CSC"
 description: "A series on DNS"
 comments: true
 keywords: "dns, domain name system"
@@ -8,15 +8,13 @@ keywords: "dns, domain name system"
 
 > Prerequisite: Please see this post [Why understanding of DNS monitoring is useful for securing and hardening infrastructure](https://hannahsuarez.github.io/2019/DNS-Monitoring/) published earlier in 2019
 
-# How DNS request information is used in IT security.
-
 A strong grasp of DNS is the foundation for secure networks and systems. Knowledge of what is in DNS request information, as covered in the previous post, in IT security leads to hardening network engineering practices.
 
-## SANS CSC recommendations for DNS security
+*For example, enumeration:*
 
 Ensuring illegal connections are not being made from the outside through hardening network helps prevent network footprinting where the adversary enumerates information about the target network to learn the resources in the network - domain names, computer names, IP addresses and more. This information is used as part of the enumeration exercises to learn more about the network prior to a compromise and attack.
 
-Recommended on SANS CSC 19-3 is to deploy DNS servers in a hierarchical and structured way, ensuring that internal network client machines are configured to send requests to internal DNS servers, not to public Internet facing DNS servers. These internal DNS servers should then be configured to forward requests that cannot be resolved to DNS servers that are located within a protected demilitarized zone (DMZ). In turn these DMZ servers are then allowed to send requests to the Internet. The function of a DNS DMZ is to provide external or Internet DNS services to corporate users while also protecting them from external network threats like those trying to illegally connect to the internal network.
+# Know your DNS Requests and Queries
 
 Knowledge of DNS request information in IT security can also lead to determining if there are communications to bad servers, such as an unwanted C2 (Command and Control) server.
 
@@ -24,7 +22,7 @@ According to SANS CSC 5-11, and in many other network security engineering stand
 
 When periodic DNS requests are made by a host in the target network to a compromised domain controlled by the adversary, these responses contain exploits used to perform unauthorized and unwanted actions in the target host or even target network. These actions include data theft where data is transferred from the target network to a C2 server via protocols such as SSH through DNS queries and responses. Finding DNS request information is needed, since in order to tunnel the data, the compromised host must make DNS queries to the malicious domain. DNS tunneling can also be used for executing shellcode or machine code that is used within an exploit which is then executed.
 
-## Other DNS malware attacks
+# Know your DNS malware attacks
 
 Administrators monitoring the network for traffic, either from sandboxed networks, honeypots, or actual intrusions, need sufficient log collection to be effective. Compromised clients with APT malware communicating to  command-and-control servers, DNS hijacking trojan horse attacks and other DNS anomalies are just an example of attacks using DNS.
 
@@ -70,7 +68,7 @@ Vulnerable [versions of MikroTik RouterBOARD](https://cve.mitre.org/cgi-bin/cven
 
 Vulnerable versions of [IBM DataPower Gateways](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-1773) (IBM X-Force ID: 136817) could allow MITM attacks via spoofing DNS responses to perform DNS cache poisoning and redirect Internet traffic. In this case, it is also useful to be kept up to date with vendor updates.
 
-# DNS Logging - Going Beyond
+# Go Beyond DNS Logging
 
 In addition to DNS log collection, be informed of other concepts including:
 
@@ -93,7 +91,9 @@ DNS query and response, client and nameserver IP address
 
 Monitoring of the user (user and process) that is made pssible through setting up other log collection endpoints but not covered in the paper.
 
-## Mitigations
+## SANS CSC recommendations for DNS security
+
+Recommended on SANS CSC 19-3 is to deploy DNS servers in a hierarchical and structured way, ensuring that internal network client machines are configured to send requests to internal DNS servers, not to public Internet facing DNS servers. These internal DNS servers should then be configured to forward requests that cannot be resolved to DNS servers that are located within a protected demilitarized zone (DMZ). In turn these DMZ servers are then allowed to send requests to the Internet. The function of a DNS DMZ is to provide external or Internet DNS services to corporate users while also protecting them from external network threats like those trying to illegally connect to the internal network.
 
 ### SANS CSC-5
 
