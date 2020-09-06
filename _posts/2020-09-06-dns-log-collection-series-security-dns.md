@@ -6,9 +6,7 @@ comments: true
 keywords: "dns, domain name system"
 ---
 
-> This series is from some of the braindump and notes that I have collected while researching DNS back in 2019. I have decided to share these notes out. Of course, the RFC series and implementations are the source of information of these notes.
-
-### Prerequisite: Please see this post [Why understanding of DNS monitoring is useful for securing and hardening infrastructure](https://hannahsuarez.github.io/2019/DNS-Monitoring/) published earlier in 2019
+> Prerequisite: Please see this post [Why understanding of DNS monitoring is useful for securing and hardening infrastructure](https://hannahsuarez.github.io/2019/DNS-Monitoring/) published earlier in 2019
 
 # How DNS request information is used in IT security.
 
@@ -121,3 +119,5 @@ To lower the chance of spoofed e-mail messages, implement the Sender Policy Fram
 
 #### CSC 19-3
 4Deploy domain name systems (DNS) in a hierarchical, structured fashion, with all internal network client machines configured to send requests to intranet DNS servers, not to DNS servers located on the Internet. These internal DNS servers should be configured to forward requests they cannot resolve to DNS servers located on a protected DMZ. These DMZ servers, in turn, should be the only DNS servers allowed to send requests to the Internet.
+
+> This series is from some of the braindump and notes that I have collected while researching DNS back in 2019. I have decided to share these notes out. Of course, the RFC series and implementations are the source of information of these notes.

@@ -6,9 +6,7 @@ comments: true
 keywords: "dns, domain name system"
 ---
 
-> This series is from some of the braindump and notes that I have collected while researching DNS back in 2019. I have decided to share these notes out. Of course, the RFC series and implementations are the source of information of these notes.
-
-### Prerequisite: Please see this post [Why understanding of DNS monitoring is useful for securing and hardening infrastructure](https://hannahsuarez.github.io/2019/DNS-Monitoring/) published earlier in 2019
+> Prerequisite: Please see this post [Why understanding of DNS monitoring is useful for securing and hardening infrastructure](https://hannahsuarez.github.io/2019/DNS-Monitoring/) published earlier in 2019
 
 Logging DNS queries are a valuable data source used in networks in order to help incident response, and discover for indicators of compromise (intrusion discovery).  However, these transactions are noisy and can take up significant space. Log collection and log centralization will funnel these valuable logs into a processing and analytics system to enable specialists to gain insights into valuable security scenarios.  Beyond that, log centralization protects the integrity of the data should the DNS server be compromised as part of counter incident-response efforts.
 
@@ -49,3 +47,5 @@ Once DNS log collection is set up, administrators must write configurations to p
 ## Finding DNS Queries with Sysmon Event ID 22
 
 See my previous post [here](https://hannahsuarez.github.io/2019/Sysmon-eventID22/) for more information.
+
+> This series is from some of the braindump and notes that I have collected while researching DNS back in 2019. I have decided to share these notes out. Of course, the RFC series and implementations are the source of information of these notes.
