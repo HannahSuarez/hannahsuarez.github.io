@@ -195,8 +195,6 @@ All items posted on social media are my own opinions and do not represent my emp
 
 [Personal Blog](https://blog.hannahsuarez.me/)
 
-[Medium](https://medium.com/@hannahsuarez)
-
 [Github: hcs0](http://www.github.com/hcs0)
 
 [Github: HannahSuarez](http://www.github.com/HannahSuarez)
@@ -204,7 +202,5 @@ All items posted on social media are my own opinions and do not represent my emp
 [Gitlab: hcs0](https://gitlab.com/users/hcs0/projects)
 
 [Security Stack Exchange](https://security.stackexchange.com/users/138814/nasahorse)
-
-[AngelList: hannahsuarez](https://angel.co/hannahsuarez)
 
 [RSS feed](https://hannahsuarez.github.io/feed)
