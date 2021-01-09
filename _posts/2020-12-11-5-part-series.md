@@ -16,4 +16,4 @@ Part 3: https://www.domaintools.com/resources/blog/maximizing-your-defense-with-
 
 Part 4: https://www.domaintools.com/resources/blog/increase-the-visibility-of-your-linux-dns-servers-with-log-collection
 
-Part 5: Coming soon
+Part 5: https://www.domaintools.com/resources/blog/useful-sources-of-domain-and-dns-logging
