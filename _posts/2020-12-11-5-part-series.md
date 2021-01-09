@@ -8,12 +8,12 @@ keywords: "security"
 
 Please click on the links to read the original series.
 
-Part 1: https://www.domaintools.com/resources/blog/dns-and-domain-logging-a-birds-eye-view
+Part 1: [https://www.domaintools.com/resources/blog/dns-and-domain-logging-a-birds-eye-view](https://www.domaintools.com/resources/blog/dns-and-domain-logging-a-birds-eye-view)
 
-Part 2: https://www.domaintools.com/resources/blog/how-targeted-log-collection-strengthens-your-client-and-network-defenses
+Part 2: [https://www.domaintools.com/resources/blog/how-targeted-log-collection-strengthens-your-client-and-network-defenses](https://www.domaintools.com/resources/blog/how-targeted-log-collection-strengthens-your-client-and-network-defenses)
 
-Part 3: https://www.domaintools.com/resources/blog/maximizing-your-defense-with-windows-dns-logging
+Part 3: [https://www.domaintools.com/resources/blog/maximizing-your-defense-with-windows-dns-logging](https://www.domaintools.com/resources/blog/maximizing-your-defense-with-windows-dns-logging)
 
-Part 4: https://www.domaintools.com/resources/blog/increase-the-visibility-of-your-linux-dns-servers-with-log-collection
+Part 4: [https://www.domaintools.com/resources/blog/increase-the-visibility-of-your-linux-dns-servers-with-log-collection](https://www.domaintools.com/resources/blog/increase-the-visibility-of-your-linux-dns-servers-with-log-collection)
 
-Part 5: https://www.domaintools.com/resources/blog/useful-sources-of-domain-and-dns-logging
+Part 5: [https://www.domaintools.com/resources/blog/useful-sources-of-domain-and-dns-logging](https://www.domaintools.com/resources/blog/useful-sources-of-domain-and-dns-logging)
