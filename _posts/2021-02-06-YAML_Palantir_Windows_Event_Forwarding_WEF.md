@@ -10,21 +10,23 @@ Duplicates from the ["Security Auditing and Monitoring Reference"](https://hanna
 
 IDs are from the [Palantir WEF](https://github.com/palantir/windows-event-forwarding/) repo.
 
+Follow the comments to ascertain which section pertains to which config.
+
 ```
-  #account management: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Account-Management.xml
+  #Account Management: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Account-Management.xml
   - name: Security
     processors:
       - drop_event.when.not.or:
         - equals.winlog.event_id: 4765
 
-  #active directory: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Active-Directory.xml
+  #Active Directory: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Active-Directory.xml
   - name: Security
     processors:
       - drop_event.when.not.or:
         - equals.winlog.event_id: 14080
         - equals.winlog.event_id: 4717
 
-  #application crashes: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Application-Crashes.xml
+  #Application Crashes: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Application-Crashes.xml
   - name: Application
     processors:
       - drop_event.when.not.or:
@@ -42,13 +44,13 @@ IDs are from the [Palantir WEF](https://github.com/palantir/windows-event-forwar
     provider:
       - Windows Error Reporting
 
-  #applocker: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Applocker.xml
+  #AppLocker: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Applocker.xml
   - name: Microsoft-Windows-AppLocker/EXE and DLL
   - name: Microsoft-Windows-AppLocker/MSI and Script
   - name: Microsoft-Windows-AppLocker/Packaged app-Execution
   - name: Microsoft-Windows-AppLocker/Packaged app-Deployment
 
-  #authentication: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Authentication.xml
+  #Authentication: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Authentication.xml
   - name: Security
     processors:
       - drop_event.when.not.or:
@@ -64,14 +66,14 @@ IDs are from the [Palantir WEF](https://github.com/palantir/windows-event-forwar
         - equals.winlog.event_id: 4803
         - equals.winlog.event_id: 5378
 
-  #autoruns: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Autoruns.xml
+  #Autoruns: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Autoruns.xml
   #make sure to set up the scheduled autoruns service
   - name: Autoruns
 
-  #bits: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Bits-Client.xml
+  #Bits Client: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Bits-Client.xml
   - name: Microsoft-Windows-Bits-Client/Operational
 
-  #code integrity: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Code-Integrity.xml
+  #Code Integrity: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Code-Integrity.xml
   - name: Microsoft-Windows-CodeIntegrity/Operational
     processors:
       - drop_event.when.not.or:
@@ -85,7 +87,7 @@ IDs are from the [Palantir WEF](https://github.com/palantir/windows-event-forwar
     provider:
       - Microsoft-Windows-CodeIntegrity
 
-  #dns: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/DNS.xml
+  #DNS: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/DNS.xml
   - name: Microsoft-Windows-DNS-Client/Operational
     processors:
       - drop_event.when.not.or:
@@ -101,10 +103,10 @@ IDs are from the [Palantir WEF](https://github.com/palantir/windows-event-forwar
       - drop_event.when.not.or:
         - equals.winlog.event_id: 541
 
-  #device guard: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Device-Guard.xml
+  #Device Guard: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Device-Guard.xml
   - name: Microsoft-Windows-DeviceGuard/Operational
 
-  #drivers: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Drivers.xml
+  #Drivers: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Drivers.xml
   - name: System
     processors:
       - drop_event.when.not.or:
@@ -117,7 +119,7 @@ IDs are from the [Palantir WEF](https://github.com/palantir/windows-event-forwar
       - drop_event.when.not.or:
         - equals.winlog.event_id: 2004
 
-  #emet: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/EMET.xml
+  #EMET: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/EMET.xml
   - name: Application
     processors:
       - drop_event.when.not.or:
@@ -127,7 +129,7 @@ IDs are from the [Palantir WEF](https://github.com/palantir/windows-event-forwar
     provider:
       - EMET
 
-  #event log diagnostics: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Event-Log-Diagnostics.xml
+  #EventLog Diagnostics: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Event-Log-Diagnostics.xml
   - name: System
     provider:
       - Microsoft-Windows-Eventlog
@@ -136,7 +138,7 @@ IDs are from the [Palantir WEF](https://github.com/palantir/windows-event-forwar
       - drop_event.when.not.or:
         - equals.winlog.event_id: 1100
 
-  #external devices: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/External-Devices.xml
+  #External Devices: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/External-Devices.xml
   - name: Microsoft-Windows-Kernel-PnP/Configuration
     processors:
       - drop_event.when.not.or:
@@ -146,7 +148,7 @@ IDs are from the [Palantir WEF](https://github.com/palantir/windows-event-forwar
     provider:
       - Microsoft-Windows-Kernel-PnP
 
-  #firewall: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Firewall.xml
+  #Windows Firewall: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Firewall.xml
   - name: Microsoft-Windows-Windows Firewall With Advanced Security/Firewall
     processors:
       - drop_event.when.not.or:
@@ -158,7 +160,7 @@ IDs are from the [Palantir WEF](https://github.com/palantir/windows-event-forwar
     provider:
       - Microsoft-Windows-Windows Firewall With Advanced Security
 
-  #gpo errors: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Group-Policy-Errors.xml
+  #GPO Errors: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Group-Policy-Errors.xml
   - name: System
     processors:
       - drop_event.when.not.or:
@@ -170,7 +172,7 @@ IDs are from the [Palantir WEF](https://github.com/palantir/windows-event-forwar
     provider:
       - Microsoft-Windows-GroupPolicy
 
-  #kerberos: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Kerberos.xml
+  #Kerberos: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Kerberos.xml
   - name: Security
     processors:
       - drop_event.when.not.or:
@@ -178,7 +180,7 @@ IDs are from the [Palantir WEF](https://github.com/palantir/windows-event-forwar
         - equals.winlog.event_id: 4770
         - equals.winlog.event_id: 4773
 
-  #log deletion system: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Log-Deletion-System.xml
+  #Log Deletion System: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Log-Deletion-System.xml
   - name: System
     processors:
       - drop_event.when.not.or:
@@ -187,7 +189,7 @@ IDs are from the [Palantir WEF](https://github.com/palantir/windows-event-forwar
     provider:
       - Microsoft-Windows-Eventlog
 
-  #msi: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/MSI-Packages.xml
+  #MSI Packages: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/MSI-Packages.xml
   - name: Application
     processors:
       - drop_event.when.not.or:
@@ -230,10 +232,10 @@ IDs are from the [Palantir WEF](https://github.com/palantir/windows-event-forwar
     provider:
       - Microsoft-Windows-Application-Experience
 
-  #office: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Microsoft-Office.xml
+  #Microsoft Office: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Microsoft-Office.xml
   - name: OAlerts
 
-  #ntml: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/NTLM.xml
+  #NTML: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/NTLM.xml
   - name: Microsoft-Windows-Authentication/AuthenticationPolicyFailures-DomainController
     provider:
       - Microsoft-Windows-NTLM
@@ -244,7 +246,7 @@ IDs are from the [Palantir WEF](https://github.com/palantir/windows-event-forwar
     provider:
       - Microsoft-Windows-NTLM
 
-  #operating system: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Operating-System.xml
+  #Operating System: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Operating-System.xml
   - name: System
     processors:
       - drop_event.when.not.or:
@@ -283,12 +285,12 @@ IDs are from the [Palantir WEF](https://github.com/palantir/windows-event-forwar
         - equals.winlog.event_id: 6008
         - equals.winlog.event_id: 4621
 
-  #powershell: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Powershell.xml
+  #Windows PowerShell: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Powershell.xml
   - name: Microsoft-Windows-PowerShell/Operational
   - name: Microsoft-Windows-PowerShell-DesiredStateConfiguration-FileDownloadManager/Operational
   - name: Windows PowerShell
 
-  #print: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Print.xml
+  #Print: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Print.xml
   - name: Microsoft-Windows-PrintService/Operational
     processors:
       - drop_event.when.not.or:
@@ -297,7 +299,7 @@ IDs are from the [Palantir WEF](https://github.com/palantir/windows-event-forwar
     provider:
       - Microsoft-Windows-PrintService
 
-  #services: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Services.xml
+  #Services: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Services.xml
   - name: System
     processors:
       - drop_event.when.not.or:
@@ -320,7 +322,7 @@ IDs are from the [Palantir WEF](https://github.com/palantir/windows-event-forwar
     provider:
       - Service Control Manager
 
-  #shares: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Shares.xml
+  #Shares: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Shares.xml
   - name: Microsoft-Windows-SMBClient/Operational
     processors:
       - drop_event.when.not.or:
@@ -329,10 +331,10 @@ IDs are from the [Palantir WEF](https://github.com/palantir/windows-event-forwar
   - name: Microsoft-Windows-SMBClient/Security
   - name: Microsoft-Windows-SMBServer/Security
 
-  #smart card: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Smart-Card.xml
+  #Smart Card: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Smart-Card.xml
   - name: Microsoft-Windows-SmartCard-Audit/Authentication
 
-  #software restrictions: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Software-Restriction-Policies.xml
+  #Software Restrictions: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Software-Restriction-Policies.xml
   - name: Application
     processors:
       - drop_event.when.not.or:
@@ -344,16 +346,16 @@ IDs are from the [Palantir WEF](https://github.com/palantir/windows-event-forwar
     provider:
       - Microsoft-Windows-SoftwareRestrictionPolicies
 
-  #sysmon: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Sysmon.xml
+  #Sysmon: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Sysmon.xml
   - name: Microsoft-Windows-Sysmon/Operational
 
-  #system time change: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/System-Time-Change.xml
+  #System Time Change: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/System-Time-Change.xml
   - name: Security
     processors:
       - drop_event.when.not.or:
         - equals.winlog.event_id: 4616
 
-  #task scheduler: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Task-Scheduler.xml
+  #Task Scheduler: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Task-Scheduler.xml
   - name: Microsoft-Windows-TaskScheduler/Operational
     processors:
       - drop_event.when.not.or:
@@ -366,7 +368,7 @@ IDs are from the [Palantir WEF](https://github.com/palantir/windows-event-forwar
     provider:
       - Microsoft-Windows-TaskScheduler
 
-  #terminal services: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Terminal-Services.xml
+  #Terminal Services: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Terminal-Services.xml
   - name: Microsoft-Windows-TerminalServices-Gateway/Admin
   - name: Microsoft-Windows-TerminalServices-Gateway/Operational
   - name: Microsoft-Windows-TerminalServices-ClientUSBDevices/Admin
@@ -378,11 +380,11 @@ IDs are from the [Palantir WEF](https://github.com/palantir/windows-event-forwar
   - name: Microsoft-Windows-TerminalServices-ServerUSBDevices/Admin
   - name: Microsoft-Windows-TerminalServices-ServerUSBDevices/
 
-  #wmi: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/WMI.xml
+  #WMI: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/WMI.xml
   - name: Microsoft-Windows-WMI-Activity/Operational
   - name: Microsoft-Windows-TPM-WMI
 
-  #windows defender: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Windows-Defender.xml
+  #Windows Defender: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Windows-Defender.xml
   - name: Microsoft-Windows-Windows Defender/Operational
     processors:
       - drop_event.when.not.or:
@@ -398,7 +400,7 @@ IDs are from the [Palantir WEF](https://github.com/palantir/windows-event-forwar
         - equals.winlog.event_id: 1118
         - equals.winlog.event_id: 1119
 
-  #windows update: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Windows-Updates.xml
+  #Windows Update: https://github.com/palantir/windows-event-forwarding/blob/master/wef-subscriptions/Windows-Updates.xml
   - name: Microsoft-Windows-WindowsUpdateClient/Operational
     processors:
       - drop_event.when.not.or:
