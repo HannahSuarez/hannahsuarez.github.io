@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "YAML config for the Palantir Windows Event Forwarding recommendations"
-description: "YAML config for the Palantir Windows Event Forwarding recommendations"
+title: "YAML config for the Palantir Windows Event Forwarding Guidance"
+description: "YAML config for the Palantir Windows Event Forwarding Guidance"
 comments: true
 keywords: "security, yaml, elk, elastic, database, servers, blueteam"
 ---
 
 Duplicates from the ["Security Auditing and Monitoring Reference"](https://hannahsuarez.github.io/2021/Winlogbeat_NSAEventstoMonitor/) and ["Exploit Protection Events"](https://hannahsuarez.github.io/2021/ExploitProtectionEvents/) YAML configuration files are already taken out.
 
-IDs are from the [Palantir WEF](https://github.com/palantir/windows-event-forwarding/) repo.
+IDs are from the [Palantir WEF Guidance](https://github.com/palantir/windows-event-forwarding/) repo.
 
 Follow the comments to ascertain which section pertains to which config.
 
