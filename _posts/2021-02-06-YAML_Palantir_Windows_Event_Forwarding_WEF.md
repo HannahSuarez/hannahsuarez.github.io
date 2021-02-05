@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "YAML config for the Palantic Windows Event Forwarding recommendations"
-description: "YAML config for the Palantic Windows Event Forwarding recommendations"
+title: "YAML config for the Palantir Windows Event Forwarding recommendations"
+description: "YAML config for the Palantir Windows Event Forwarding recommendations"
 comments: true
 keywords: "security, yaml, elk, elastic, database, servers, blueteam"
 ---
@@ -423,4 +423,4 @@ IDs are from the [Palantir WEF](https://github.com/palantir/windows-event-forwar
 
 > Note: These are from 2019, so there may have been changes in terms of event ingestion.
 
-> YMMV! Your mileage may vary. 
+> YMMV! Your mileage may vary.
