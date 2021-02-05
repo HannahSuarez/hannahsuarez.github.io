@@ -15,12 +15,9 @@ Read more at [Spotting the Adversary with Windows Event Log Monitoring (version 
 
   - name: System
 
-
   # define Account Usage events in the Security channel
   - name: Security
-    event_id: 4740, 4648, 4781, 4733, 4776, 5376, 5377, 4625, 300, 4634, 4672, 4720, 4722, 4782, 4793, 4731, 4735, 4766, 4765, 4624
-, 4726, 4725, 4767, 4728, 4732, 4756, 4704
-
+    event_id: 4740, 4648, 4781, 4733, 4776, 5376, 5377, 4625, 300, 4634, 4672, 4720, 4722, 4782, 4793, 4731, 4735, 4766, 4765, 4624, 4726, 4725, 4767, 4728, 4732, 4756, 4704
 
   # define Account Usage events in the Application channel
   - name: Application
@@ -29,7 +26,6 @@ Read more at [Spotting the Adversary with Windows Event Log Monitoring (version 
   # define Account Usage events in LSA channel
   - name: Microsoft-Windows-LSA/Operational
     event_id: 300
-
 
   # define Application Crashes event in the Application channel
   - name: Application
@@ -50,7 +46,6 @@ Read more at [Spotting the Adversary with Windows Event Log Monitoring (version 
   # define Application Whitelisting events
   - name: Microsoft-Windows-SoftwareRestrictionPolicies
     event_id: 865, 866, 867, 868, 882
-
 
   # define Boot Events in the System channel
   - name: System
@@ -112,7 +107,6 @@ Read more at [Spotting the Adversary with Windows Event Log Monitoring (version 
   - name: Microsoft-Windows-CAPI2/Operational
     event_id: 11, 70, 90
 
-
   # define Mobile Device Activities events in NetworkProfile
   - name: Microsoft-Windows-NetworkProfile/Operational
     event_id: 10000, 10001
@@ -120,7 +114,6 @@ Read more at [Spotting the Adversary with Windows Event Log Monitoring (version 
   # define Mobile Device Activities events in WLAN AutoConfig
   - name: Microsoft-Windows-WLAN-AutoConfig/Operational
     event_id: 8003, 8000, 8011, 8001, 11000, 11001, 11002, 12011, 12012, 12013, 8002, 11004, 11005, 11010, 11006
-
 
   # define Network Host Activities events in the Security channel
   - name: Security
@@ -133,7 +126,6 @@ Read more at [Spotting the Adversary with Windows Event Log Monitoring (version 
   # define Network Host Activities events in RemoteAccess channel
   - name: Microsoft-Windows-MPRMSG
     event_id: 20250, 20274, 20275
-
 
   # define PowerShell Activities events in PS Operational Channel
   - name: Microsoft-Windows-Powershell/Operational

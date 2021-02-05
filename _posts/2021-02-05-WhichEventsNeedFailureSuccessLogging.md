@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "YAML config to share! Which Windows auditing events require failure and success logging?"
+title: "Which Windows auditing events require failure and success logging?"
 description: "Use this as a reference to see which ones need failure and success logging"
 comments: true
 keywords: "security, yaml, elk, elastic, database, servers, blueteam"
 ---
 
-Which events require failure and success logging? Please see the YAML configuration below and follow the comments.
+Which events require failure and success logging? Please see the list below and follow the comments.
+
+This list functions more as an indication of EventIDs to check through to see if *auditing and success logging* is occuring in the first instance.
 
 ```
 - name: Security

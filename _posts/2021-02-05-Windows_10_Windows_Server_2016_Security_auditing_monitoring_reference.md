@@ -70,7 +70,7 @@ winlogbeat.event_logs:
         - equals.winlog.event_id: 4746
         - equals.winlog.event_id: 4747
         - equals.winlog.event_id: 4748
-        #Audit Security Group Management and Other Accnt Mgmt Events
+        #Audit Security Group Management and Other Account Management Events
         - equals.winlog.event_id: 4782
         - equals.winlog.event_id: 4793
         - equals.winlog.event_id: 4727
@@ -89,7 +89,7 @@ winlogbeat.event_logs:
         - equals.winlog.event_id: 4758
         - equals.winlog.event_id: 4764
         - equals.winlog.event_id: 4799
-        #Audit User Account Mgmt.
+        #Audit User Account Management
         - equals.winlog.event_id: 4720
         - equals.winlog.event_id: 4722
         - equals.winlog.event_id: 4723
@@ -119,7 +119,7 @@ winlogbeat.event_logs:
         - equals.winlog.event_id: 6422
         - equals.winlog.event_id: 6423
         - equals.winlog.event_id: 6424
-        #Audit process creation and termination. May be noisy.
+        #Audit process creation and termination.
         - equals.winlog.event_id: 4688
         - equals.winlog.event_id: 4696
         - equals.winlog.event_id: 4689
@@ -326,7 +326,7 @@ winlogbeat.event_logs:
         - equals.winlog.event_id: 4673
         - equals.winlog.event_id: 4674
         - equals.winlog.event_id: 4985
-        #Audit other system events - windows firewall service, branchcache, key file operation
+        #Audit other system events - Windows Firewall service, branchcache, key file operation
         - equals.winlog.event_id: 5024
         - equals.winlog.event_id: 5025
         - equals.winlog.event_id: 6400
