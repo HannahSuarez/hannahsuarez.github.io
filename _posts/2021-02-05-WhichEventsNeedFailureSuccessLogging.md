@@ -211,6 +211,4 @@ This list functions more as an indication of EventIDs to check through to see if
   event.code: 1104, 1105, 1108
 ```
 
-> Note: These are from 2019, so there may have been changes in terms of event ingestion.
-
 > YMMV! Your mileage may vary.

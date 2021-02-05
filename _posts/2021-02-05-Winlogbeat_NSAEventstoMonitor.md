@@ -184,6 +184,4 @@ Read more at [Spotting the Adversary with Windows Event Log Monitoring (version 
     event_id:  20, 24, 25, 31, 34, 35
 ```
 
-> Note: These are from 2019, so there may have been changes in terms of event ingestion.
-
 > YMMV! Your mileage may vary.

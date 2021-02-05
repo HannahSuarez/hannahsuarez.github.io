@@ -381,6 +381,4 @@ winlogbeat.event_logs:
         - equals.winlog.event_id: 4661
 ```
 
-> Note: These are from 2019, so there may have been changes in terms of event ingestion.
-
 > YMMV! Your mileage may vary.

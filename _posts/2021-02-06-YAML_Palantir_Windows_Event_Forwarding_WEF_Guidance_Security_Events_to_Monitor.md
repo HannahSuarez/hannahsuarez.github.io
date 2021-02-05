@@ -423,6 +423,4 @@ Follow the comments to ascertain which section pertains to which config.
       - Microsoft-Windows-Servicing
 ```
 
-> Note: These are from 2019, so there may have been changes in terms of event ingestion.
-
 > YMMV! Your mileage may vary.
