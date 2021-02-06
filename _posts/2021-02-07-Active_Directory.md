@@ -1,0 +1,226 @@
+---
+layout: post
+title: "YAML Config with Event IDs of Active Directory Domain Service Events with Criticality Info"
+description: "Event IDs of Active Directory Domain Service Events with Criticality Info (Low, Medium, High)"
+comments: true
+keywords: "security, yaml, active directory, logging, log collection, blueteam"
+---
+
+The following are Active Directory Domain Service Events with criticality severity information noted in the comments, based on [this Appendix of Events to Monitor](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/appendix-l--events-to-monitor#appendix-l-events-to-monitor).
+
+```
+- name: Security
+#this is the Path in Windows QueryXML
+- name: Directory Service
+#Events where potential criticality is high
+  processors:
+    - drop_event.when.not.or:
+      - equals.winlog.event_id: 4618
+      - equals.winlog.event_id: 4649
+      - equals.winlog.event_id: 4719
+      - equals.winlog.event_id: 4765
+      - equals.winlog.event_id: 4766
+      - equals.winlog.event_id: 4794
+      - equals.winlog.event_id: 4897
+      - equals.winlog.event_id: 4964
+      - equals.winlog.event_id: 5124
+      - equals.winlog.event_id: 1102
+#Events where potential criticality is medium
+      - equals.winlog.event_id: 4621
+      - equals.winlog.event_id: 4675
+      - equals.winlog.event_id: 4692
+      - equals.winlog.event_id: 4693
+      - equals.winlog.event_id: 4706
+      - equals.winlog.event_id: 4713
+      - equals.winlog.event_id: 4714
+      - equals.winlog.event_id: 4715
+      - equals.winlog.event_id: 4716
+      - equals.winlog.event_id: 4724
+      - equals.winlog.event_id: 4727
+      - equals.winlog.event_id: 4735
+      - equals.winlog.event_id: 4737
+      - equals.winlog.event_id: 4739
+      - equals.winlog.event_id: 4754
+      - equals.winlog.event_id: 4755
+      - equals.winlog.event_id: 4764
+      - equals.winlog.event_id: 4764
+      - equals.winlog.event_id: 4780
+      - equals.winlog.event_id: 4816
+      - equals.winlog.event_id: 4865
+      - equals.winlog.event_id: 4866
+      - equals.winlog.event_id: 4867
+      - equals.winlog.event_id: 4868
+      - equals.winlog.event_id: 4870
+      - equals.winlog.event_id: 4882
+      - equals.winlog.event_id: 4885
+      - equals.winlog.event_id: 4890
+      - equals.winlog.event_id: 4892
+      - equals.winlog.event_id: 4896
+      - equals.winlog.event_id: 4906
+      - equals.winlog.event_id: 4907
+      - equals.winlog.event_id: 4908
+      - equals.winlog.event_id: 4912
+      - equals.winlog.event_id: 4960
+      - equals.winlog.event_id: 4961
+      - equals.winlog.event_id: 4962
+      - equals.winlog.event_id: 4963
+      - equals.winlog.event_id: 4965
+      - equals.winlog.event_id: 4976
+      - equals.winlog.event_id: 4977
+      - equals.winlog.event_id: 4978
+      - equals.winlog.event_id: 4983
+      - equals.winlog.event_id: 4984
+      - equals.winlog.event_id: 5027
+      - equals.winlog.event_id: 5028
+      - equals.winlog.event_id: 5029
+      - equals.winlog.event_id: 5030
+      - equals.winlog.event_id: 5035
+      - equals.winlog.event_id: 5037
+      - equals.winlog.event_id: 5038
+      - equals.winlog.event_id: 5120
+      - equals.winlog.event_id: 5121
+      - equals.winlog.event_id: 5122
+      - equals.winlog.event_id: 5123
+      - equals.winlog.event_id: 5376
+      - equals.winlog.event_id: 5377
+      - equals.winlog.event_id: 5453
+      - equals.winlog.event_id: 5480
+      - equals.winlog.event_id: 5483
+      - equals.winlog.event_id: 5484
+      - equals.winlog.event_id: 5485
+      - equals.winlog.event_id: 6145
+      - equals.winlog.event_id: 6273
+      - equals.winlog.event_id: 6274
+      - equals.winlog.event_id: 6275
+      - equals.winlog.event_id: 6276
+      - equals.winlog.event_id: 6277
+      - equals.winlog.event_id: 6278
+      - equals.winlog.event_id: 6279
+      - equals.winlog.event_id: 6280
+      - equals.winlog.event_id: 24586
+      - equals.winlog.event_id: 24592
+      - equals.winlog.event_id: 24593
+      - equals.winlog.event_id: 24594
+#Events where potential criticality is low
+      - equals.winlog.event_id: 4608
+      - equals.winlog.event_id: 4609
+      - equals.winlog.event_id: 4610
+      - equals.winlog.event_id: 4611
+      - equals.winlog.event_id: 4612
+      - equals.winlog.event_id: 4614
+      - equals.winlog.event_id: 4615
+      - equals.winlog.event_id: 4616
+      - equals.winlog.event_id: 4624
+      - equals.winlog.event_id: 4625
+      - equals.winlog.event_id: 4634
+      - equals.winlog.event_id: 4647
+      - equals.winlog.event_id: 4648
+      - equals.winlog.event_id: 4656
+      - equals.winlog.event_id: 4657
+      - equals.winlog.event_id: 4658
+      - equals.winlog.event_id: 4660
+      - equals.winlog.event_id: 4661
+      - equals.winlog.event_id: 4662
+      - equals.winlog.event_id: 4663
+      - equals.winlog.event_id: 4672
+      - equals.winlog.event_id: 4673
+      - equals.winlog.event_id: 4674
+      - equals.winlog.event_id: 4688
+      - equals.winlog.event_id: 4689
+      - equals.winlog.event_id: 4690
+      - equals.winlog.event_id: 4691
+      - equals.winlog.event_id: 4696
+      - equals.winlog.event_id: 4697
+      - equals.winlog.event_id: 4698
+      - equals.winlog.event_id: 4699
+      - equals.winlog.event_id: 4700
+      - equals.winlog.event_id: 4701
+      - equals.winlog.event_id: 4702
+      - equals.winlog.event_id: 4704
+      - equals.winlog.event_id: 4705
+      - equals.winlog.event_id: 4707
+      - equals.winlog.event_id: 4717
+      - equals.winlog.event_id: 4718
+      - equals.winlog.event_id: 4720
+      - equals.winlog.event_id: 4722
+      - equals.winlog.event_id: 4723
+      - equals.winlog.event_id: 4725
+      - equals.winlog.event_id: 4726
+      - equals.winlog.event_id: 4728
+      - equals.winlog.event_id: 4729
+      - equals.winlog.event_id: 4730
+      - equals.winlog.event_id: 4731
+      - equals.winlog.event_id: 4732
+      - equals.winlog.event_id: 4733
+      - equals.winlog.event_id: 4734
+      - equals.winlog.event_id: 4738
+      - equals.winlog.event_id: 4740
+      - equals.winlog.event_id: 4741
+      - equals.winlog.event_id: 4742
+      - equals.winlog.event_id: 4743
+      - equals.winlog.event_id: 4744
+      - equals.winlog.event_id: 4745
+      - equals.winlog.event_id: 4746
+      - equals.winlog.event_id: 4747
+      - equals.winlog.event_id: 4748
+      - equals.winlog.event_id: 4749
+      - equals.winlog.event_id: 4750
+      - equals.winlog.event_id: 4751
+      - equals.winlog.event_id: 4752
+      - equals.winlog.event_id: 4753
+      - equals.winlog.event_id: 4756
+      - equals.winlog.event_id: 4757
+      - equals.winlog.event_id: 4758
+      - equals.winlog.event_id: 4759
+      - equals.winlog.event_id: 4760
+      - equals.winlog.event_id: 4761
+      - equals.winlog.event_id: 4762
+      - equals.winlog.event_id: 4767
+      - equals.winlog.event_id: 4768
+      - equals.winlog.event_id: 4769
+      - equals.winlog.event_id: 4770
+      - equals.winlog.event_id: 4771
+      - equals.winlog.event_id: 4772
+      - equals.winlog.event_id: 4774
+      - equals.winlog.event_id: 4775
+      - equals.winlog.event_id: 4776
+      - equals.winlog.event_id: 4778
+      - equals.winlog.event_id: 4779
+      - equals.winlog.event_id: 4781
+      - equals.winlog.event_id: 4783
+      - equals.winlog.event_id: 4785
+      - equals.winlog.event_id: 4786
+      - equals.winlog.event_id: 4787
+      - equals.winlog.event_id: 4788
+      - equals.winlog.event_id: 4789
+      - equals.winlog.event_id: 4790
+      - equals.winlog.event_id: 4869
+      - equals.winlog.event_id: 4871
+      - equals.winlog.event_id: 4872
+      - equals.winlog.event_id: 4873
+      - equals.winlog.event_id: 4874
+      - equals.winlog.event_id: 4875
+      - equals.winlog.event_id: 4876
+      - equals.winlog.event_id: 4877
+      - equals.winlog.event_id: 4878
+      - equals.winlog.event_id: 4879
+      - equals.winlog.event_id: 4880
+      - equals.winlog.event_id: 4881
+      - equals.winlog.event_id: 4883
+      - equals.winlog.event_id: 4884
+      - equals.winlog.event_id: 4886
+      - equals.winlog.event_id: 4887
+      - equals.winlog.event_id: 4888
+      - equals.winlog.event_id: 4889
+      - equals.winlog.event_id: 4891
+      - equals.winlog.event_id: 4893
+      - equals.winlog.event_id: 4894
+      - equals.winlog.event_id: 4895
+      - equals.winlog.event_id: 4898
+      - equals.winlog.event_id: 5136
+      - equals.winlog.event_id: 5137
+  provider:
+    - Microsoft-Windows-ActiveDirectory_DomainService
+```
+
+> YMMV! Your mileage may vary.
