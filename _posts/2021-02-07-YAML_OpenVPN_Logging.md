@@ -6,6 +6,8 @@ comments: true
 keywords: "security, yaml, openvpn, logging, log collection, blueteam"
 ---
 
+**Example Windows**
+
 ```
 input {
   file {
@@ -19,7 +21,7 @@ filter {
     #match => {
       #"message" => "%{SYSLOGBASE} %{USER:user}/%{IP:source_ip}:%{POSINT:source_port} SENT CONTROL \[%{USER:OpenVPNUser}\]: \'%{DATA:msg}\' \(status=%{INT:status_code}\)"
     #}
-    #If OpenVPN logs has user details
+    #If OpenVPN logs contain user details
     #remove_field => ["OpenVPNUser"]
 
     #match => {
@@ -73,7 +75,7 @@ output {
     index => "openvpn-%{+YYYY.MM.dd}"
   }
   # debug
-  #stdout { codec => rubydebug }
+  # stdout { codec => rubydebug }
 }
 
   beats {
@@ -81,7 +83,7 @@ output {
   }
 ```
 
-## Audit Logging
+**Audit Logging**
 
 Deploy file integrity monitoring of the following critical locations, but will ultimately depend on where configs are placed.
 
@@ -109,7 +111,7 @@ There will also be authentication process, such as preauthorization, authenticat
 C:\Program Files\OpenVPN\config\*
 ```
 
-## OpenVPN Config Tests
+**OpenVPN Config Tests**
 
 * Load the log sample and change the input path to the right location.
 * When a user successfully authenticates, a type is created `“openvpn_access”`
