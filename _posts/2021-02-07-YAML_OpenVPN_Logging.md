@@ -85,6 +85,19 @@ output {
 
 Deploy file integrity monitoring of the following critical locations, but will ultimately depend on where configs are placed.
 
+Where to obtain OpenVPN log file:
+
+**Linux:**
+
+The OpenVPN log file is defined on the `/etc/openvpn/server.conf`.
+The verbosity of the log is also defined in the `server.conf` file.
+
+There will also be authentication process, such as preauthorization, authentication, enrollment events, and messages stating in `“/var/log/messages”` in addition to the OpenVPN log file.
+
+**Windows**
+
+`\Program Files\OpenVPN\log` and `C:\Program Files\OpenVPN\config\`
+
 ```
 #Linux server config example
 /etc/openvpn/server.conf
@@ -95,5 +108,15 @@ Deploy file integrity monitoring of the following critical locations, but will u
 #Windows config files example
 C:\Program Files\OpenVPN\config\*
 ```
+
+== OpenVPN Config Tests
+
+* Load the log sample and change the input path to the right location.
+* When a user successfully authenticates, a type is created `“openvpn_access”`
+* When a user does not successfully authenticates, a type is created `“openvpn_err”`.
+* Reload the configuration and check that Elastic does not reindex the event.
+* Change the OpenVPN configuration on the client and see if it triggers a file integrity monitoring event.
+* Change the OpenVPN configuration on the server and see if it triggers a file integrity monitoring event.
+* Windows -> Client connects to OpenVPN server (message is logged with type `"openvpn_access"`), then successful log in (Event ID 4624) is then logged.
 
 > YMMV! Your mileage may vary.
