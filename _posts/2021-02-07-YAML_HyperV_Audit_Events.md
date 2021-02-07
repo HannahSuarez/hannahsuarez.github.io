@@ -14,8 +14,6 @@ The following is an Auditbeat YML configuration snippet utilizing the `file_inte
 #Individual files to monitor
   - C:\ProgramData\Microsoft\Event Viewer\Views\ServerRoles\Virtualization.Events.xml
   - C:\ProgramData\Microsoft\Microsoft\Windows\Hyper-V\InitialStore.xml
-#may not exist
-  - C:\Users\Public\Documents\Blank floppy disk\Blank.vfd
 #Files in C:\Windows\System32\
   - C:\Windows\System32\wnetvsc.inf
   - C:\Windows\System32\ws3cap.inf
