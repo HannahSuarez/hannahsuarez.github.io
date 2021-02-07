@@ -81,7 +81,7 @@ output {
   }
 ```
 
-== Audit Logging
+## Audit Logging
 
 Deploy file integrity monitoring of the following critical locations, but will ultimately depend on where configs are placed.
 
@@ -109,7 +109,7 @@ There will also be authentication process, such as preauthorization, authenticat
 C:\Program Files\OpenVPN\config\*
 ```
 
-== OpenVPN Config Tests
+## OpenVPN Config Tests
 
 * Load the log sample and change the input path to the right location.
 * When a user successfully authenticates, a type is created `“openvpn_access”`
