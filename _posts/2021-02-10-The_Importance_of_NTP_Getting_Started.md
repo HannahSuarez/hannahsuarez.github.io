@@ -18,6 +18,8 @@ _Most cryptography uses timestamps to limit certificate and signature validity p
 
 Logrythm also offers a data sheet on time normalization [here](https://logrhythm.com/pdfs/datasheets/lr-time-normalization-datasheet.pdf) (fyi: not affiliated with them!).
 
+Read more about the attacks on the [wiki](https://en.wikipedia.org/wiki/NTP_server_misuse_and_abuse) and [Black Hat EU 14 paper](https://www.blackhat.com/docs/eu-14/materials/eu-14-Selvi-Bypassing-HTTP-Strict-Transport-Security-wp.pdf).
+
 ## Ways to set up or configure own NTP Servers
 
 Windows servers utilize `time.windows.com`. For others, or to maintain your own there are a few options, depending on your own resources as well as criticality.
@@ -34,6 +36,13 @@ If seeking your own, the first step is to learn more about NTP [Stratum model](h
 
 You can buy your own NTP server, or even build one off hardware like Raspberry Pi.
 
+Cost of own NTP server varies. For example, 3600 euro + 800 for other features (Ultra high bandwidth, built in DOS detection, security hardening). Up to 1000 euro (ie TIMENET Pro, POE-powered NTP Master Time Server, incl. 5 metre antenna).
+
+To build your own the cost with Arduino or Raspberry module using RTC (real time clock) module is needed.
+
+Steps to set up NTP servers in PCI compliance http://www.qcode.co.uk/post/117
+
+
 **Own NTP server (Stratum 3) that obtain time from Stratum 2 servers**
 
 * Uses “industry accepted time sources” - For example depending on the country there may be universities that host such servers, also there are more hosted privately and at other companies.
@@ -41,7 +50,26 @@ You can buy your own NTP server, or even build one off hardware like Raspberry P
 * Should be implemented with PKI infra, public key authentication, pre-shared key
 
 **Own NTP server that uses the NTP pool**
+
 * NTP.org uses round-robin DNS to allocate the IP address of a random time server in the pool. The geographically closer servers will provide the most accurate time
 * NTP takes the time supplied from your 4 allocated time servers and uses that information collectively to calculate an accurate time. No one source is considered authoritative.
 * Select at least 4 domain names from ntp.org
-* More info athttp://support.ntp.org/bin/view/Servers/NTPPoolServers
+* More info at [http://support.ntp.org/bin/view/Servers/NTPPoolServers](athttp://support.ntp.org/bin/view/Servers/NTPPoolServers).
+
+**Have NTP client already installed on Linux server?**
+
+Check on these servers:
+
+`timedatectl`
+
+If `Network time on: yes` it is synced with NTP
+If `NTP synchronized: no` the clock synced through another tool. May also mean
+`systemd` didn't sync...
+
+If `Network time on: no` run `sudo timedatectl set-ntp true`
+
+Option:
+`ntpdate Client` - suitable for those not connected to Internet
+
+Use `timedatectl | grep "Time zone"`
+Debian: `cat /etc/timezone`
