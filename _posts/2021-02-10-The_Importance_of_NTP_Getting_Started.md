@@ -8,7 +8,7 @@ keywords: "security, ntp, time, network time protocol, logging, log collection, 
 
 ## About NTP
 
-You may have services on your network that depend on [NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol) and accurate timestamps. These include DNS servers, Cryptography (certificate/signature validity) like being able to connect to a https website as well as ensuring non-repudiation and integrity via maintaining accurate timestamps in logs and especially audit logs. Inaccurate timestamps offer an inaccurate view of a sequence of events, thus making it difficult to obtain a timeframe of events in an IR.
+You may have services on your network that depend on [NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol) and accurate timestamps in addition to using the standardized ISO8601 format. These include DNS servers, Cryptography (certificate/signature validity) like being able to connect to a https website as well as ensuring non-repudiation and integrity via maintaining accurate timestamps in logs and especially audit logs. Inaccurate timestamps offer an inaccurate view of a sequence of events, thus making it difficult to obtain a timeframe of events in an IR.
 
 ## Attack Example
 
@@ -39,8 +39,6 @@ You can buy your own NTP server, or even build one off hardware like Raspberry P
 Cost of own NTP server varies. For example, 3600 euro + 800 for other features (Ultra high bandwidth, built in DOS detection, security hardening). Up to 1000 euro (ie TIMENET Pro, POE-powered NTP Master Time Server, incl. 5 metre antenna).
 
 To build your own the cost with Arduino or Raspberry module using RTC (real time clock) module is needed.
-
-Steps to set up NTP servers in PCI compliance http://www.qcode.co.uk/post/117
 
 
 **Own NTP server (Stratum 3) that obtain time from Stratum 2 servers**
