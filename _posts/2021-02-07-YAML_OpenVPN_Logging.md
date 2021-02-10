@@ -83,22 +83,25 @@ output {
   }
 ```
 
+> The above sample is not written by me. Alas I have not been able to yet find the origins of this, as it has been residing in my files but happy to reference the source once I can.
+
+
 **Audit Logging**
 
 Deploy file integrity monitoring of the following critical locations, but will ultimately depend on where configs are placed.
 
-Where to obtain OpenVPN log file:
+Where to obtain OpenVPN log file for...
 
 **Linux:**
 
 The OpenVPN log file is defined on the `/etc/openvpn/server.conf`.
 The verbosity of the log is also defined in the `server.conf` file.
 
-There will also be authentication process, such as preauthorization, authentication, enrollment events, and messages stating in `“/var/log/messages”` in addition to the OpenVPN log file.
+There will also be authentication process, such as preauthorization, authentication, enrolment events, and messages stating in `“/var/log/messages”` in addition to the OpenVPN log file.
 
 **Windows**
 
-`\Program Files\OpenVPN\log` and `C:\Program Files\OpenVPN\config\`
+Potential paths include `\Program Files\OpenVPN\log` and `C:\Program Files\OpenVPN\config\`
 
 ```
 #Linux server config example
@@ -119,6 +122,6 @@ C:\Program Files\OpenVPN\config\*
 * Reload the configuration and check that Elastic does not reindex the event.
 * Change the OpenVPN configuration on the client and see if it triggers a file integrity monitoring event.
 * Change the OpenVPN configuration on the server and see if it triggers a file integrity monitoring event.
-* Windows -> Client connects to OpenVPN server (message is logged with type `"openvpn_access"`), then successful log in (Event ID 4624) is then logged.
+* Windows -> Client connects to OpenVPN server (message is logged with type `"openvpn_access"`), then successful log in (Event ID `4624`) is then logged.
 
 > YMMV! Your mileage may vary.
