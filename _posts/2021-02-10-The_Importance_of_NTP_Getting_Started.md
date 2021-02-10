@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "The Importance of NTP (Network Time Protocol) in Logging and Auditing"
+title: "NTP (Network Time Protocol) and Logging"
 description: "The importance of NTP (Network Time Protocol) in Logging and Auditing"
 comments: true
 keywords: "security, ntp, time, network time protocol, logging, log collection, blueteam"
 ---
 
-## About
+## About NTP
 
 You may have services on your network that depend on [NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol) and accurate timestamps. These include DNS servers, Cryptography (certificate/signature validity) like being able to connect to a https website as well as ensuring non-repudiation and integrity via maintaining accurate timestamps in logs and especially audit logs. Inaccurate timestamps offer an inaccurate view of a sequence of events, thus making it difficult to obtain a timeframe of events in an IR.
 
@@ -73,3 +73,42 @@ Option:
 
 Use `timedatectl | grep "Time zone"`
 Debian: `cat /etc/timezone`
+
+## Collecting logs from NTP Server
+
+`grep log /etc/ntp.conf` will show the location of where the logs are made.
+
+Can change this location to another place otherwise logs normally go to `/var/messages` in `/opt/ntp/ntp.log`
+
+## How to check NTP client sync logs
+
+[Please see this Microsoft Technet support site](https://social.technet.microsoft.com/Forums/Lync/en-US/d36c9a2b-62f8-4a88-ab99-a3c899ced3c3/how-to-check-the-ntp-client-sync-logs) for the answer.
+
+## NTP Authentication
+
+[Please see Galsys](https://www.galsys.co.uk/news/ntp-authentication-explained/) to read more about NTP authentication.
+
+Related: [NTP key-gen](http://doc.ntp.org/4.2.8/keygen.html)
+
+
+## Collecting logs from Windows Time Server on ADDC
+
+Audit changes to these registry keys
+`HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Parameters\Type` (Values changed in the `'Value'` data box) – set to `NTP`
+
+`HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Config\AnnounceFlags`
+(`DWORD` Value changes in the `'Value'` data box) – set to `5`
+
+As usual, **the latest advice** comes from Microsoft's own [documentation](https://docs.microsoft.com/en-US/troubleshoot/windows-server/identity/configure-authoritative-time-server).
+
+## Defending NTP Server Notes
+
+* Considering configuring the firewall rules to provide exception for the 1 NTP server. Tighter ACL – ie enforce requests only from valid sources
+* Traffic filtering
+* Ensure no overprovisioning
+* Block from the open Internet, closed only.
+* Make sure it is upgraded
+* Configure NTP authentication (ie [RedHat](https://access.redhat.com/solutions/393663)). Maybe needed for compliance reasons ie DoD, FIPS 140-2, etc.
+* Disable `monlist`
+* Check http://openntpproject.org/ to see if the NTP server is on the public list
+* Extending semantics of a Reference Identifier field in an NTP packet when a Stratum field is 0.
