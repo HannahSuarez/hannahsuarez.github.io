@@ -8,15 +8,15 @@ permalink: /about/
 
 **About this Site**
 
-The purpose of this blog is to advance our knowledge in this field by sharing instructions, advice, notes, thoughts, and more. It is also a channel to share what I am working on as well as a place to share what I have worked on in the past.
+The purpose of this website is to advance our knowledge in this field by sharing instructions, advice, notes, thoughts, and more. It is also a channel to share what I am working on as well as a place to share what I have worked on in the past.
 
 **Professional**
 
-Currently I am involved with a DNS/domain security intelligence company. In addition, I work as consultant in IT Security with clients based in Germany.
+**Currently open to remote opportunities. Please email me info [at] suarez[.]id[.]au**
 
-Most recently, I was Technical Evangelist for NXLog. NXLog is a multi-platform log management tool that helps to easily identify security risks, policy breaches or analyze operational problems in server logs, operation system logs and application logs.
+Most recently, I was involved with a DNS/domain security intelligence company, providing technical writing and API documentation services.
 
-Previously, I was a consultant for a secure managed file transfer software company, learning all about secure file transfer protocols (SFTP, FTP, FTPS) as well as applying secure file transfer solution to possible projects. I was also a support technician for a digital signage company, providing remote support for Linux and Windows Servers running the signage.
+Previously, I was Technical Evangelist for NXLog. NXLog is a multi-platform log management tool that helps to easily identify security risks, policy breaches or analyze operational problems in server logs, operation system logs and application logs. Prior to that, I was a consultant for a secure managed file transfer software company, learning all about secure file transfer protocols (SFTP, FTP, FTPS) as well as applying secure file transfer solution to possible projects.
 
 Entering the information security field has been my goal since mid 2014 having completed a digital mobile forensics online challenge and finding myself completely engrossed. My first conference was Black Hat as part of a scholarship program in 2015 and my first related role in the field was in late 2016.
 
