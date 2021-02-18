@@ -1,9 +1,9 @@
 
 # SEO settings
 title: "Articles, Notes and Other Work"
-title2: " by hcs0" # default: ""
+title2: " by hcs0 (open to new remote opportunities)" # default: ""
 description: "hcs0 writings"
-keywords: "hcs0, hannah suarez"
+keywords: "hcs0, hannah suarez, siem, soc, technical writing, documentation, dns, logging, elastic search, kibana, splunk, logstash, beats"
 url: http://hannahsuarez.github.io # site url
 baseurl: null # apply repo name if use it under gh-pages branch
 # baseurl: null # apply null if repo name is something like username.github.io
