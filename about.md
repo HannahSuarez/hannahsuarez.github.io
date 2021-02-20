@@ -10,6 +10,8 @@ permalink: /about/
 
 The purpose of this website is to advance our knowledge in this field by sharing instructions, advice, notes, thoughts, and more. It is also a channel to share what I am working on as well as a place to share what I have worked on in the past.
 
+If you found anything on this site to be useful, you can buy me a coffee with BTC at this wallet address: **3EfuNMJU2SNovXTXLG1Q3sJhU82rKvaUS1**
+
 **Professional**
 
 **Currently open to remote opportunities. Please email me info [at] suarez[.]id[.]au**
