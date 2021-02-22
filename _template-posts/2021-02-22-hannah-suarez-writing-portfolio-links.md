@@ -6,15 +6,20 @@ comments: true
 keywords: "technical writing, documentation"
 ---
 
+A collection of publicly available links of previous work.
+
 ## DomainTools
 
 Whois History API
+
 https://www.domaintools.com/resources/api-documentation/whois-history/
 
 Integration Guide
+
 https://www.domaintools.com/content/DomainTools_For_Splunk_4-1_App_User_Guide.pdf
 
 Technical Blog Posts
+
 https://www.domaintools.com/resources/blog/dns-and-domain-logging-a-birds-eye-view
 https://www.domaintools.com/resources/blog/how-targeted-log-collection-strengthens-your-client-and-network-defenses
 https://www.domaintools.com/resources/blog/maximizing-your-defense-with-windows-dns-logging
@@ -23,13 +28,16 @@ https://www.domaintools.com/resources/blog/useful-sources-of-domain-and-dns-logg
 
 ## NXLog
 
-User Guide
+User Guide (various sections, mainly Integrations)
+
 https://nxlog.co/documentation
 
-Whitepapers (all except Security Auditing on Modern Operating Systems)
+Whitepapers (all except _Security Auditing on Modern Operating Systems_)
+
 https://nxlog.co/whitepapers
 
-Blog posts
+Technical Blog posts
+
 DNS Log Collection:
 https://nxlog.co/dns-log-collection-and-parsing
 https://nxlog.co/dns-log-collection-on-windows
@@ -44,24 +52,29 @@ https://nxlog.co/windows-event-forwarding
 https://nxlog.co/owasp-top10-2017
 
 Landing Pages
+
 https://nxlog.co/eventlog-to-syslog
 
 Guest post on opensource.com:
+
 https://opensource.com/article/19/2/reducing-security-risks-centralized-logging
 
 
 ## SFTPPlus
 
 User Guide
+
 Online https://www.sftpplus.com/documentation/sftpplus/latest/
 Repo https://github.com/proatria/sftpplus-docs
 
-Note: The git history of the repo indicates that a major import event occurred, meaning history before 2019 is not shown.
+> Note: The git history of the repo indicates that a major import event occurred, meaning history before 2019 is not shown.
 
 API Documentation
+
 https://www.sftpplus.com/documentation/sftpplus/latest/developer/index.html (only for the HTTP API sections)
 
 Technical Blog Posts
+
 https://www.sftpplus.com/articles/2018/sftpplus-ipv6-readiness-article.html
 https://www.sftpplus.com/articles/2018/sftpplus-securing-file-transfers-with-third-parties.html
 https://www.sftpplus.com/articles/2018/sftpplus-best-protocols.html
