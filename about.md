@@ -31,6 +31,11 @@ etc).
 
 ---
 
+My collection of publicly available links to past work are available on Github
+[here](https://github.com/HannahSuarez/hannahsuarez.github.io/blob/master/_template-posts/2021-02-22-hannah-suarez-writing-portfolio-links.md).
+
+---
+
 **Personal**
 
 I enjoy traveling and living outside of my home country of Australia. I am currently living and traveling in and around Europe. I am based in Berlin on a freelance permit. I have previously lived in Paris, Dublin, Vancouver, Toronto, London, and Brisbane outside my home town.
