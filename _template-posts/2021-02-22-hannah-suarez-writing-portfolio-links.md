@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "Technical Writing Portfolio Links"
-description: "A list of compliance related information that has been written"
+description: "A collection of publicly available links of previous work."
 comments: true
 keywords: "technical writing, documentation"
 ---
 
-A collection of publicly available links of previous work.
+A collection of publicly available links to previous work.  Not all context info is added here, so please contact me for more information.
 
 ## DomainTools
 
@@ -36,9 +36,15 @@ User Guide (various sections, mainly Integrations)
 
 https://nxlog.co/documentation
 
-Whitepapers (all except _Security Auditing on Modern Operating Systems_)
+Whitepapers
 
-https://nxlog.co/whitepapers
+https://nxlog.co/whitepapers/reduce-data-size-cut-siem-costs
+
+https://nxlog.co/whitepapers/windows-event-tracing
+
+https://nxlog.co/whitepapers/dns-logging
+
+https://nxlog.co/whitepapers/structured-logging
 
 Technical Blog posts
 
