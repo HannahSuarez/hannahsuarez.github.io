@@ -14,8 +14,6 @@ The purpose of this website is to advance our knowledge in this field by sharing
 
 **Professional**
 
-**Currently open to remote opportunities. Please email me info [at] suarez[.]id[.]au**
-
 Most recently, I was involved with a DNS/domain security intelligence company, providing technical writing and API documentation services.
 
 Previously, I was Technical Evangelist for NXLog. NXLog is a multi-platform log management tool that helps to easily identify security risks, policy breaches or analyze operational problems in server logs, operation system logs and application logs. Prior to that, I was a consultant for a secure managed file transfer software company, learning all about secure file transfer protocols (SFTP, FTP, FTPS) as well as applying secure file transfer solution to possible projects.
@@ -31,8 +29,10 @@ etc).
 
 ---
 
-My collection of publicly available links to past work are available on Github
-[here](https://github.com/HannahSuarez/hannahsuarez.github.io/blob/master/_template-posts/2021-02-22-hannah-suarez-writing-portfolio-links.md).
+**Currently open to remote opportunities. Please email me info [at] suarez[.]id[.]au**
+
+A list of publicly available links to past work are available on Github at
+[here](https://github.com/HannahSuarez/hannahsuarez.github.io/blob/master/_template-posts/2021-02-22-hannah-suarez-writing-portfolio-links.md). Please contact me for further details.
 
 ---
 
