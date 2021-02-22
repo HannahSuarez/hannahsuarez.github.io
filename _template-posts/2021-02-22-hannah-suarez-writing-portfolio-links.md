@@ -65,6 +65,7 @@ https://opensource.com/article/19/2/reducing-security-risks-centralized-logging
 User Guide
 
 Online https://www.sftpplus.com/documentation/sftpplus/latest/
+
 Repo https://github.com/proatria/sftpplus-docs
 
 > Note: The git history of the repo indicates that a major import event occurred, meaning history before 2019 is not shown.
