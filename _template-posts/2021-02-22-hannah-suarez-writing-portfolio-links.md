@@ -6,7 +6,7 @@ comments: true
 keywords: "technical writing, documentation"
 ---
 
-A collection of publicly available links to previous work.  Not all context info is added here, so please contact me for more information.
+A collection of publicly available links to previous work.  Not all context info is added here, so please contact me (hannahsuarez.me) for more information.
 
 ## DomainTools
 
