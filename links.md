@@ -204,3 +204,7 @@ All items posted on social media are my own opinions and do not represent my emp
 [Security Stack Exchange](https://security.stackexchange.com/users/138814/nasahorse)
 
 [RSS feed](https://hannahsuarez.github.io/feed)
+
+**Image Credit**
+
+The Superuser OÙ banner image is from Pexels - Eberhard Grossgasteiger.
