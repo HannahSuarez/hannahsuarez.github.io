@@ -38,7 +38,7 @@ type: log
 paths:
  - /path/to/logs
 #example
- #- F:\Program Files\Microsoft\Exchange Server\V15\TransportRoles\Logs\MessageTracking\MSGTRK2017051409-1.LOG
+ #- F:\Program Files\Microsoft\Exchange Server\V15\TransportRoles\Logs\MessageTracking\*.LOG
 
 processors:
  - decode_csv_fields:
@@ -60,7 +60,6 @@ name: Application
 ignore_older: 72h
 name: Security
 name: System
-#The availability of these should  be confirmed in Event Viewer of the Exchange Server first as the names are from SP10 documentation
 name: MSExchange Management
 name: MSExchange ADAccess
 name: MSExchange Message
