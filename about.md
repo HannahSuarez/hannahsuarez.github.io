@@ -14,9 +14,17 @@ The purpose of this website is to advance our knowledge in this field by sharing
 
 **Professional**
 
-Most recently, I was involved with a DNS/domain security intelligence company, providing technical writing and API documentation services.
+Currently Information Security Officer.
 
-Previously, I was Technical Evangelist for NXLog. NXLog is a multi-platform log management tool that helps to easily identify security risks, policy breaches or analyze operational problems in server logs, operation system logs and application logs. Prior to that, I was a consultant for a secure managed file transfer software company, learning all about secure file transfer protocols (SFTP, FTP, FTPS) as well as applying secure file transfer solution to possible projects.
+Before:
+
+- Consultant DNS/domain security intelligence company, providing technical writing and API documentation services.
+
+- Technical Evangelist for NXLog. NXLog is a multi-platform log management tool that helps to easily identify security risks, policy breaches or analyze operational problems in server logs, operation system logs and application logs.
+
+- Consultant for Vindler GmbH in security logging and implementation.
+
+- Consultant for a secure managed file transfer software company, learning all about secure file transfer protocols (SFTP, FTP, FTPS) as well as applying secure file transfer solution to possible projects.
 
 Entering the information security field has been my goal since mid 2014 having completed a digital mobile forensics online challenge and finding myself completely engrossed. My first conference was Black Hat as part of a scholarship program in 2015 and my first related role in the field was in late 2016.
 
@@ -26,13 +34,6 @@ points at this online game. I learnt how to code by looking at a website's
 source code in my teens using Notepad.  I learn by doing ie homelab/VM setup
 (ie Kali on VM and Kali Nethunter on Android, various Linux OS' on live USB
 etc).
-
----
-
-**Currently open to remote opportunities. Please email me info [at] suarez[.]id[.]au**
-
-A list of publicly available links to past work are available on Github at
-[here](https://github.com/HannahSuarez/hannahsuarez.github.io/blob/master/_template-posts/2021-02-22-hannah-suarez-writing-portfolio-links.md). Please contact me for further details.
 
 ---
 

@@ -1,9 +1,9 @@
 
 # SEO settings
 title: "Articles and Notes"
-title2: " by hcs0 (open to new opportunities)" # default: ""
+title2: " by hcs0" # default: ""
 description: "hcs0 writings"
-keywords: "hcs0, hannah suarez, siem, soc, technical writing, documentation, dns, logging, elastic search, kibana, splunk, logstash, beats"
+keywords: "hcs0, hannah suarez"
 url: http://hannahsuarez.github.io # site url
 baseurl: null # apply repo name if use it under gh-pages branch
 # baseurl: null # apply null if repo name is something like username.github.io
@@ -28,8 +28,8 @@ sass:
 # Author settings
 author:
   name     : "Hannah Suarez"
-  job      : "💻 Technical Evangelist"
-  bio      : "...developer and technical audiences."
+  job      : "💻 Technical Evangelist/Information Security Officer"
+  bio      : "Here to share information for developer and technical audiences."
   thumb    : /images/hannahsuarez.jpg
   url      : http://hannahsuarez.github.io
   github   : http://github.com/hcs0
