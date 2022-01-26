@@ -14,7 +14,7 @@ The purpose of this website is to advance our knowledge in this field by sharing
 
 **Professional**
 
-Currently Information Security Officer.
+Currently I consult as Information Security Officer for two companies.
 
 Before:
 
