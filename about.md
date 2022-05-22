@@ -10,13 +10,15 @@ permalink: /about/
 
 The purpose of this website is to advance our knowledge in this field by sharing instructions, advice, notes, thoughts, and more. It is also a channel to share what I am working on as well as a place to share what I have worked on in the past.
 
-> If you found anything on this site to be useful, you can buy me a coffee with BTC at this wallet address: **3EfuNMJU2SNovXTXLG1Q3sJhU82rKvaUS1**
+> If you found anything on this site to be useful, you can buy me a coffee with BTC at this wallet address: **3FJRwohhkSPchELwFGd1poRAeukBU2wuiL** 
 
 **Professional**
 
-Currently I consult as Information Security Officer for two companies.
+Currently Senior Cyber Security Consultant in telecommunications and airline industries.
 
 Before:
+
+- Information Security Officer and Lead Implementor of ISO 27001 in the social media advertising industry.
 
 - Consultant DNS/domain security intelligence company, providing technical writing and API documentation services.
 
