@@ -16,17 +16,13 @@ Please note that I do not have Instagram or Facebook accounts.
 
 All items posted on social media are my own opinions and do not represent my employers, clients, professional associations and more.
 
-[Personal Blog](https://blog.hannahsuarez.me/)
-
 [Github: hcs0](http://www.github.com/hcs0)
 
 [Github: HannahSuarez](http://www.github.com/HannahSuarez)
 
 [Gitlab: hcs0](https://gitlab.com/users/hcs0/projects)
 
-[Security Stack Exchange](https://security.stackexchange.com/users/138814/nasahorse)
-
-[RSS feed](https://hannahsuarez.github.io/feed)
+[Mastodon](https://infosec.exchange/@superruserr)
 
 **Image Credit**
 
